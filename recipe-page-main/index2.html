@@ -32,7 +32,7 @@
       }
 
       img {
-        width: 425px;
+        width: 440px;
         margin: 20px;
         border-radius: 14px;
         margin-bottom: 10px;
@@ -40,7 +40,7 @@
 
       .container {
         background-color: hsl(0, 0%, 100%);
-        max-width: 470px;
+        max-width: 480px;
         margin: 0 auto;
         margin-top: 60px;
         margin-bottom: 60px;
@@ -65,7 +65,7 @@
         color: hsl(332, 51%, 32%);
       }
       li::marker {
-        color: hsl(30, 10%, 34%);
+        color: hsl(14, 45%, 36%);
       }
 
       ul,
@@ -106,9 +106,72 @@
         margin-left: 20px;
       }
 
+      .container-5 ol li::marker {
+        font-weight: bold;
+        margin: 60px;
+      }
+
       .container-5 ol li {
-        margin-left: 40px;
+        margin-left: 33px;
         margin-right: 30px;
+        margin-bottom: 0px;
+        padding: 4px;
+      }
+
+      .container-6 {
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 200px;
+        height: 200px;
+      }
+
+      .container-6 h1 {
+        margin: 1px;
+        padding-bottom: 10px;
+      }
+      .container-6 p {
+        padding: 5px;
+        margin-bottom: 5px;
+      }
+      /* .container-6 p {
+        margin: -5px;
+        padding-left: 5px;
+      } */
+
+      .b {
+        padding-left: -1px;
+        margin-left: 15px;
+      }
+
+      .row {
+        margin-left: 5px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        row-gap: 120px;
+        height: 20px;
+      }
+
+      .row-1 {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        border-bottom: 1px solid hsl(30, 18%, 87%);
+      }
+
+      .row-2 {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        border-bottom: 1px solid hsl(30, 18%, 87%);
+      }
+
+      .row-3 {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        border-bottom: 1px solid hsl(30, 18%, 87%);
+      }
+
+      .row-4 {
+        display: grid;
+        grid-template-columns: 200px 200px;
       }
     </style>
   </head>
@@ -154,9 +217,9 @@
           <h1>Instructions</h1>
           <ol>
             <li>
-              <strong>Beat the eggs:</strong> beat the eggs with a pinch of salt
-              and pepper until they are well mixed. You can add a tablespoon of
-              water or milk for a fluffier texture.
+              <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a
+              pinch of salt and pepper until they are well mixed. You can add a
+              tablespoon of water or milk for a fluffier texture.
             </li>
             <li>
               <strong>Heat the pan:</strong> Place a non-stick frying pan over
@@ -189,21 +252,23 @@
             The table below shows nutrirional values per serving without the
             additional fillings.
           </p>
-          <div>
-            <p>Calories</p>
-            <span>277kcal</span>
-          </div>
-          <div>
-            <p>Carbs</p>
-            <span>0g</span>
-          </div>
-          <div>
-            <p>Protein</p>
-            <span>20g</span>
-          </div>
-          <div>
-            <p>Fat</p>
-            <span>22g</span>
+          <div class="col">
+            <div class="row-1 row">
+              <p class="b">Calories</p>
+              <span>277kcal</span>
+            </div>
+            <div class="row-2 row">
+              <p class="b">Carbs</p>
+              <span>0g</span>
+            </div>
+            <div class="row-3 row">
+              <p class="b">Protein</p>
+              <span>20g</span>
+            </div>
+            <div class="row-4 row">
+              <p class="b">Fat</p>
+              <span>22g</span>
+            </div>
           </div>
         </div>
       </div>
